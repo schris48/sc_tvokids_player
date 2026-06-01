@@ -1,9 +1,12 @@
-.vjs-chromecast-button .vjs-icon-placeholder:before {
-  content: "\f2a6" !important;
-  font-family: VideoJS !important;
-  opacity: 1 !important;
-  color: #ffffff !important;
+/* Show Chromecast icon (receiver plugin uses Google launcher) */
+.vjs-chromecast-receiver-button google-cast-launcher {
+  display: inline-block !important;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
-.vjs-chromecast-button[aria-disabled="true"] {
+
+/* Hide button when unavailable */
+.vjs-chromecast-receiver-button[aria-disabled="true"] {
   display: none !important;
 }
