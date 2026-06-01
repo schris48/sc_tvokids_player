@@ -1,17 +1,20 @@
-/* Make control bar taller AND vertically center all controls */
+/* Control bar height */
 .video-js .vjs-control-bar {
   height: 3.2em;
-  display: flex;
-  align-items: center;
 }
 
-/* Scale only built-in icon glyphs (safe) */
-.video-js .vjs-control.vjs-button:before {
-  font-size: 1.4em;
+/* Vertically center everything */
+.video-js .vjs-control-bar .vjs-control {
+  line-height: 3.2em;
 }
 
-/* Ensure all controls inside the bar align vertically */
-.video-js .vjs-control-bar > * {
-  display: flex;
-  align-items: center;
+/* Slightly scale ALL control buttons (safe version) */
+.video-js .vjs-control-bar .vjs-button {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+/* Prevent scaling from breaking spacing */
+.video-js .vjs-control-bar .vjs-button > * {
+  pointer-events: none;
 }
