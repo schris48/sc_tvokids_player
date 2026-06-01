@@ -7,3 +7,9 @@
 .video-js .vjs-control-bar .vjs-time-control {
   font-size: 1.2em;
 }
+
+/* Vertically center icon/content inside each control */
+.video-js .vjs-control-bar .vjs-control {
+  display: inline-flex;
+  align-items: center;
+}
