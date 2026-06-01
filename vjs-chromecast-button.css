@@ -1,9 +1,9 @@
-/* Show Chromecast icon (receiver plugin uses Google launcher) */
-.vjs-chromecast-receiver-button google-cast-launcher {
-  display: inline-block !important;
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
+/* Restore icon for Chromecast receiver fallback */
+.vjs-chromecast-receiver-button .vjs-icon-placeholder:before {
+  content: "\f2a6";
+  font-family: VideoJS;
+  opacity: 1;
+  color: #ffffff;
 }
 
 /* Hide button when unavailable */
