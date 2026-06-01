@@ -1,20 +1,30 @@
-/* Control bar height */
+/* Control bar size */
 .video-js .vjs-control-bar {
   height: 3.2em;
 }
 
-/* Vertically center everything */
+/* Vertical centering */
 .video-js .vjs-control-bar .vjs-control {
   line-height: 3.2em;
 }
 
-/* Slightly scale ALL control buttons (safe version) */
+/* Scale ALL icons (font + SVG) */
 .video-js .vjs-control-bar .vjs-button {
-  transform: scale(1.2);
-  transform-origin: center;
+  font-size: 1.4em;
 }
 
-/* Prevent scaling from breaking spacing */
-.video-js .vjs-control-bar .vjs-button > * {
-  pointer-events: none;
+/* Fix fullscreen icon specifically (SVG-based) */
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder:before,
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder {
+  font-size: 1.4em;
+}
+
+/* Scale timecode to match icons */
+.video-js .vjs-time-control {
+  font-size: 1.4em;
+}
+
+/* Fix spacing between right-side controls */
+.video-js .vjs-control-bar .vjs-button {
+  margin: 0 0.2em;
 }
