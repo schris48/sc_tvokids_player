@@ -1,0 +1,6 @@
+.vjs-chromecast-button .vjs-icon-placeholder:before {
+  content: "\f2a6" !important;
+  font-family: VideoJS !important;
+  opacity: 1 !important;
+  color: #ffffff !important;
+}
