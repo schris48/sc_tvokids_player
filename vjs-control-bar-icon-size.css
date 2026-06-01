@@ -1,35 +1,30 @@
-/* Turn control bar into proper flexible layout */
+/* Control bar height */
 .video-js .vjs-control-bar {
   height: 3.2em;
-  display: flex !important;
-  align-items: center;
-  padding: 0 0.8em;
 }
 
-/* Let left-side controls flow naturally */
+/* Proper vertical centering using Brightcove's system */
 .video-js .vjs-control-bar .vjs-control {
-  display: flex;
-  align-items: center;
-  line-height: normal;
+  line-height: 3.2em;
 }
 
-/* Push right-side controls to the far right */
-.video-js .vjs-control-bar .vjs-spacer {
-  flex: 1 1 auto;
-}
-
-/* Scale ALL controls consistently */
-.video-js .vjs-control-bar .vjs-button {
+/* Scale ALL controls uniformly without breaking layout */
+.video-js .vjs-control-bar {
   font-size: 1.4em;
-  margin: 0 0.25em;
 }
 
-/* Ensure no clipping happens */
+/* Add real breathing room on left and right */
+.video-js .vjs-control-bar {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* Clean spacing between controls */
+.video-js .vjs-control-bar .vjs-control {
+  margin: 0 0.2em;
+}
+
+/* Prevent clipping safely */
 .video-js .vjs-control-bar .vjs-control {
   overflow: visible;
-}
-
-/* Scale time display */
-.video-js .vjs-control-bar .vjs-time-control {
-  font-size: 1.4em;
 }
