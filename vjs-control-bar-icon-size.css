@@ -1,27 +1,35 @@
-/* Control bar height + padding */
+/* Turn control bar into proper flexible layout */
 .video-js .vjs-control-bar {
-  height: 3.2em !important;
-  padding-left: 0.8em !important;
-  padding-right: 0.8em !important;
+  height: 3.2em;
+  display: flex !important;
+  align-items: center;
+  padding: 0 0.8em;
 }
 
-/* Vertical centering */
+/* Let left-side controls flow naturally */
 .video-js .vjs-control-bar .vjs-control {
-  line-height: 3.2em !important;
+  display: flex;
+  align-items: center;
+  line-height: normal;
 }
 
-/* Scale ALL control buttons */
+/* Push right-side controls to the far right */
+.video-js .vjs-control-bar .vjs-spacer {
+  flex: 1 1 auto;
+}
+
+/* Scale ALL controls consistently */
 .video-js .vjs-control-bar .vjs-button {
-  font-size: 1.4em !important;
-  margin: 0 0.3em !important;
+  font-size: 1.4em;
+  margin: 0 0.25em;
 }
 
-/* Ensure icons don’t get clipped */
+/* Ensure no clipping happens */
 .video-js .vjs-control-bar .vjs-control {
-  overflow: visible !important;
+  overflow: visible;
 }
 
-/* Fix timecode scaling */
+/* Scale time display */
 .video-js .vjs-control-bar .vjs-time-control {
-  font-size: 1.4em !important;
+  font-size: 1.4em;
 }
