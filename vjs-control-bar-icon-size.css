@@ -1,4 +1,9 @@
-.video-js .vjs-control-bar,
-.video-js .vjs-control-bar * {
-  font-size: 1.4em;
+/* Scale Brightcove icon fonts and text ONLY */
+.video-js .vjs-control-bar .vjs-button {
+  font-size: 1.2em;
+}
+
+/* Scale timecode text */
+.video-js .vjs-control-bar .vjs-time-control {
+  font-size: 1.2em;
 }
