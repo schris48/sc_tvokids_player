@@ -2,21 +2,9 @@
 .video-js .vjs-control-bar .vjs-button {
   font-size: 1.2em;
 }
-
-/* Scale timecode text */
 .video-js .vjs-control-bar .vjs-time-control {
   font-size: 1.2em;
 }
-
-/* Keep scaling */
-.video-js .vjs-control-bar .vjs-button {
-  font-size: 1.2em;
-}
-
-.video-js .vjs-control-bar .vjs-time-control {
-  font-size: 1.2em;
-}
-
 /* Center content inside the button */
 .video-js .vjs-control-bar .vjs-button,
 .video-js .vjs-control-bar .vjs-time-control {
