@@ -1,39 +1,27 @@
-/* Control bar height */
+/* Control bar height + padding */
 .video-js .vjs-control-bar {
-  height: 3.2em;
-  padding: 0 0.8em; /* adds left + right breathing room */
+  height: 3.2em !important;
+  padding-left: 0.8em !important;
+  padding-right: 0.8em !important;
 }
 
 /* Vertical centering */
 .video-js .vjs-control-bar .vjs-control {
-  line-height: 3.2em;
+  line-height: 3.2em !important;
 }
 
-/* Scale ALL controls evenly (safe approach) */
+/* Scale ALL control buttons */
 .video-js .vjs-control-bar .vjs-button {
-  font-size: 1.4em;
+  font-size: 1.4em !important;
+  margin: 0 0.3em !important;
 }
 
-/* Normalize spacing between ALL controls */
-.video-js .vjs-control-bar .vjs-button {
-  margin: 0 0.3em;
-}
-
-/* Ensure nothing gets clipped */
+/* Ensure icons don’t get clipped */
 .video-js .vjs-control-bar .vjs-control {
-  overflow: visible;
+  overflow: visible !important;
 }
 
-/* Prevent edge crowding (both sides) */
-.video-js .vjs-control-bar > *:first-child {
-  margin-left: 0.2em;
-}
-
-.video-js .vjs-control-bar > *:last-child {
-  margin-right: 0.2em;
-}
-
-/* Scale time display to match icons */
-.video-js .vjs-time-control {
-  font-size: 1.4em;
+/* Fix timecode scaling */
+.video-js .vjs-control-bar .vjs-time-control {
+  font-size: 1.4em !important;
 }
