@@ -8,8 +8,8 @@
   font-size: 1.2em;
 }
 
-/* Vertically center icon/content inside each control */
-.video-js .vjs-control-bar .vjs-control {
-  display: inline-flex;
-  align-items: center;
+/* Vertical centering that works with Brightcove's system */
+.video-js .vjs-control-bar .vjs-button,
+.video-js .vjs-control-bar .vjs-time-control {
+  line-height: 2.8em;
 }
