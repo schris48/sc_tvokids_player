@@ -1,24 +1,23 @@
-/* Ensure the placeholder fills the button area */
+/* Make placeholder behave like native icon container */
 .vjs-chromecast-receiver-button .vjs-icon-placeholder {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
 }
 
-/* Render centered SVG icon */
+/* Render SVG icon centered like font icons */
 .vjs-chromecast-receiver-button .vjs-icon-placeholder:before {
   content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
 
   background-image: url("data:image/svg+xml;utf8,<svg fill='white' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3a2 2 0 0 0-2 2v3h2V5h18v14h-7v2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z'/><path d='M1 18v3h3a3 3 0 0 0-3-3z'/><path d='M1 14v2a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7z'/><path d='M1 10v2a9 9 0 0 1 9 9h2c0-6.08-4.93-11-11-11z'/></svg>");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-/* Hide when unavailable */
+/* Hide button when unavailable */
 .vjs-chromecast-receiver-button[aria-disabled="true"] {
   display: none !important;
 }
