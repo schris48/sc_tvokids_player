@@ -1,4 +1,4 @@
-/* Scale Brightcove icon fonts and text ONLY */
+/* Scale Brightcove icon fonts and text */
 .video-js .vjs-control-bar .vjs-button {
   font-size: 1.2em;
 }
@@ -8,8 +8,14 @@
   font-size: 1.2em;
 }
 
-/* Vertical centering that works with Brightcove's system */
+/* Keep line-height stable */
 .video-js .vjs-control-bar .vjs-button,
 .video-js .vjs-control-bar .vjs-time-control {
   line-height: 2.8em;
+}
+
+/* Lift icon glyphs up slightly */
+.video-js .vjs-control-bar .vjs-button:before {
+  position: relative;
+  top: -0.15em;
 }
