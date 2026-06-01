@@ -8,14 +8,19 @@
   font-size: 1.2em;
 }
 
-/* Keep line-height stable */
-.video-js .vjs-control-bar .vjs-button,
-.video-js .vjs-control-bar .vjs-time-control {
-  line-height: 2.8em;
+/* Keep scaling */
+.video-js .vjs-control-bar .vjs-button {
+  font-size: 1.2em;
 }
 
-/* Lift icon glyphs up slightly */
-.video-js .vjs-control-bar .vjs-button:before {
-  position: relative;
-  top: -0.15em;
+.video-js .vjs-control-bar .vjs-time-control {
+  font-size: 1.2em;
+}
+
+/* Center content inside the button */
+.video-js .vjs-control-bar .vjs-button,
+.video-js .vjs-control-bar .vjs-time-control {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
 }
