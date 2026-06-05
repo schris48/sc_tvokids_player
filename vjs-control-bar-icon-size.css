@@ -15,8 +15,8 @@
 
 /* better vertical centering balance */
 .video-js .vjs-control-bar .vjs-control {
-  padding-top: 0.18em;
-  padding-bottom: 0.07em;
+  padding-top: 0.13em;
+  padding-bottom: 0.12em;
 }
 
 /* remove remaining duration (-0:29) */
