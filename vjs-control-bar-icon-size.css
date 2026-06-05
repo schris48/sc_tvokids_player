@@ -20,39 +20,50 @@
   padding-bottom: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-/* Slight upward nudge for icon-based controls */
-.video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder:before,
-.video-js .vjs-control-bar .vjs-play-control .vjs-icon-placeholder:before,
-.video-js .vjs-control-bar .vjs-mute-control .vjs-icon-placeholder:before,
-.video-js .vjs-control-bar .vjs-volume-menu-button .vjs-icon-placeholder:before,
-.video-js .vjs-control-bar .vjs-settings-button .vjs-icon-placeholder:before,
-.video-js .vjs-control-bar .vjs-fullscreen-control .vjs-icon-placeholder:before {
+/* Move play icon up slightly */
+.video-js .vjs-control-bar .vjs-play-control .vjs-icon-placeholder:before {
   position: relative;
   top: -0.04em;
 }
 
-/* Move volume panel slightly up */
-.video-js .vjs-volume-panel,
-.video-js .vjs-volume-control,
-.video-js .vjs-volume-horizontal {
+/* Move mute / volume icon up slightly */
+.video-js .vjs-control-bar .vjs-mute-control .vjs-icon-placeholder:before,
+.video-js .vjs-control-bar .vjs-volume-menu-button .vjs-icon-placeholder:before {
+  position: relative;
+  top: -0.04em;
+}
+
+/* Move volume panel up slightly */
+.video-js .vjs-control-bar .vjs-volume-panel,
+.video-js .vjs-control-bar .vjs-volume-control,
+.video-js .vjs-control-bar .vjs-volume-horizontal {
   position: relative;
   top: -0.04em;
 }
 
 /* Move current time / duration slightly up */
-.video-js .vjs-current-time,
-.video-js .vjs-duration,
-.video-js .vjs-time-divider {
+.video-js .vjs-control-bar .vjs-current-time,
+.video-js .vjs-control-bar .vjs-duration,
+.video-js .vjs-control-bar .vjs-time-divider {
   position: relative;
   top: -0.04em;
 }
 
-/* remove remaining duration (-0:29) */
-.video-js .vjs-remaining-time {
-  display: none !important;
+/* Move settings button up slightly
+   (targets common Brightcove / Video.js menu button patterns) */
+.video-js .vjs-control-bar .vjs-menu-button .vjs-icon-placeholder:before,
+.video-js .vjs-control-bar .vjs-settings-button .vjs-icon-placeholder:before {
+  position: relative;
+  top: -0.04em;
+}
+
+/* Fullscreen: move up and force same size as other icons */
+.video-js .vjs-control-bar .vjs-fullscreen-control .vjs-icon-placeholder:before {
+  position: relative;
+  top: -0.04em;
+  font-size: 1em !important;
 }
 
 /* Fix spacing around fullscreen icon only */
@@ -61,7 +72,13 @@
   margin-right: 0.05em;
 }
 
-/* Make fullscreen icon same size as other icons */
-.video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-  font-size: 1em;
+/* Remove remaining duration (-0:29) */
+.video-js .vjs-remaining-time {
+  display: none !important;
+}
+
+/* Hide LIVE indicator */
+.video-js .vjs-live-control,
+.video-js .vjs-live-display {
+  display: none !important;
 }
