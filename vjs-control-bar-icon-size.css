@@ -2,13 +2,12 @@
 .video-js .vjs-control-bar .vjs-button {
   font-size: 1.2em;
 }
+
 .video-js .vjs-control-bar .vjs-time-control {
   font-size: 1.2em;
 }
-/* Center content inside the button */
-.video-js .vjs-control-bar .vjs-button,
-.video-js .vjs-control-bar .vjs-time-control {
-  display: inline-flex;
-  align-items: center;
-  height: 100%;
+
+/* ✅ Make control buttons taller so icons can center properly */
+.video-js .vjs-control-bar .vjs-control {
+  height: 2.8em;
 }
