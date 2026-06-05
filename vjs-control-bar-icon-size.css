@@ -15,8 +15,8 @@
 
 /* Better vertical centering balance */
 .video-js .vjs-control-bar .vjs-control {
-  padding-top: 0.08em;
-  padding-bottom: 0.17em;
+  padding-top: 0.05em;
+  padding-bottom: 0.20em;
 }
 
 /* remove remaining duration (-0:29) */
@@ -40,13 +40,13 @@
 /* Slight upward nudge for play icon */
 .video-js .vjs-play-control .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.02em;
+  top: -0.06em;
 }
 
 /* Slight upward nudge for mute icon */
 .video-js .vjs-mute-control .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.03em;
+  top: -0.08em;
 }
 
 /* Slight upward nudge for current time / divider / duration */
@@ -54,13 +54,13 @@
 .video-js .vjs-time-divider,
 .video-js .vjs-duration {
   position: relative;
-  top: -0.03em;
+  top: -0.08em;
 }
 
 /* Slight upward nudge for quality/settings cog */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.03em;
+  top: -0.08em;
 }
 
 /* Make fullscreen icon a bit larger */
