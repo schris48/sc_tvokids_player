@@ -61,17 +61,18 @@
 .video-js .vjs-time-divider,
 .video-js .vjs-duration {
   position: relative;
-  top: -0.15em;
+  top: -0.18em;
 }
 
 /* Move the quality/settings cog up a little more */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.15em;
+  top: -0.18em;
 }
 
-/* Bring fullscreen icon back and size it through the glyph */
+/* Pull fullscreen icon down a bit and enlarge it */
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-  font-size: 1.28em !important;
-  line-height: 1 !important;
+  position: relative;
+  top: 0.04em;
+  font-size: 1.45em !important;
 }
