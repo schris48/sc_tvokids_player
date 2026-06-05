@@ -7,14 +7,30 @@
   font-size: 1.2em;
 }
 
-/* Restore proper control bar background */
+/* Restore proper control bar background + height */
 .video-js .vjs-control-bar {
   background: rgba(0, 0, 0, 0.45) !important;
   height: 3em;
 }
 
-/* Fix vertical positioning */
+/* better vertical centering balance */
 .video-js .vjs-control-bar .vjs-control {
-  padding-top: 0.25em;
-  padding-bottom: 0;
+  padding-top: 0.18em;
+  padding-bottom: 0.07em;
+}
+
+/* remove remaining duration (-0:29) */
+.video-js .vjs-remaining-time {
+  display: none !important;
+}
+
+/* Fix spacing around fullscreen icon only */
+.video-js .vjs-fullscreen-control {
+  margin-left: 0.15em;
+  margin-right: 0.05em;
+}
+
+/* Slightly increase fullscreen icon size */
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
+  font-size: 1.12em;
 }
