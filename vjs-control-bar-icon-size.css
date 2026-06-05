@@ -7,7 +7,14 @@
   font-size: 1.2em;
 }
 
-/* ✅ Make control buttons taller so icons can center properly */
+/* Restore proper control bar background */
+.video-js .vjs-control-bar {
+  background: rgba(0, 0, 0, 0.45) !important;
+  height: 3em;
+}
+
+/* Fix vertical positioning */
 .video-js .vjs-control-bar .vjs-control {
-  height: 2.8em;
+  padding-top: 0.25em;
+  padding-bottom: 0;
 }
