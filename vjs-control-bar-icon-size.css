@@ -30,7 +30,42 @@
   margin-right: 0.05em;
 }
 
-/* Slightly increase fullscreen icon size */
+/* Move play icon up slightly */
+.video-js .vjs-play-control .vjs-icon-placeholder:before {
+  position: relative;
+  top: -0.03em;
+}
+
+/* Move volume tool up slightly more than play */
+.video-js .vjs-mute-control .vjs-icon-placeholder:before,
+.video-js .vjs-volume-control,
+.video-js .vjs-volume-panel {
+  position: relative;
+  top: -0.07em;
+}
+
+/* Move current time / divider / duration up slightly more than play */
+.video-js .vjs-current-time,
+.video-js .vjs-time-divider,
+.video-js .vjs-duration {
+  position: relative;
+  top: -0.07em;
+}
+
+/* Move the quality/settings cog up slightly more than play */
+.video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
+  position: relative;
+  top: -0.07em;
+}
+
+/* Fullscreen icon: enlarge so it better matches the other icons */
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-  font-size: 1.12em;
+  font-size: 1.2em !important;
+}
+
+/* Hide LIVE elements */
+.video-js .vjs-live-control,
+.video-js .vjs-live-display,
+.video-js .vjs-seek-to-live-control {
+  display: none !important;
 }
