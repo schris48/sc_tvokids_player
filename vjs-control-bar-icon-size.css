@@ -37,35 +37,41 @@
   margin-right: 0.05em;
 }
 
-/* Slight upward nudge for play icon */
+/* Play icon now looks right */
 .video-js .vjs-play-control .vjs-icon-placeholder:before {
   position: relative;
   top: -0.10em;
 }
 
-/* Slight upward nudge for mute icon */
+/* Move mute icon up a little more */
 .video-js .vjs-mute-control .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.12em;
+  top: -0.15em;
 }
 
-/* Slight upward nudge for current time / divider / duration */
+/* Move volume slider/tool up a little more */
+.video-js .vjs-volume-panel,
+.video-js .vjs-volume-control {
+  position: relative;
+  top: -0.06em;
+}
+
+/* Move current time / divider / duration up a little more */
 .video-js .vjs-current-time,
 .video-js .vjs-time-divider,
 .video-js .vjs-duration {
   position: relative;
-  top: -0.12em;
+  top: -0.15em;
 }
 
-/* Slight upward nudge for quality/settings cog */
+/* Move the quality/settings cog up a little more */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.12em;
+  top: -0.15em;
 }
 
-/* Scale fullscreen icon using rendered box instead of font-size */
-.video-js .vjs-fullscreen-control .vjs-icon-placeholder {
-  display: inline-block;
-  transform: scale(1.22);
-  transform-origin: center;
+/* Bring fullscreen icon back and size it through the glyph */
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
+  font-size: 1.28em !important;
+  line-height: 1 !important;
 }
