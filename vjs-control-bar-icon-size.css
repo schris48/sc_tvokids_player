@@ -64,6 +64,10 @@
 }
 
 /* Make fullscreen icon a bit larger */
+.video-js .vjs-fullscreen-control {
+  font-size: 1.28em !important;
+}
+
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-  font-size: 1.22em !important;
+  font-size: 1em !important;
 }
