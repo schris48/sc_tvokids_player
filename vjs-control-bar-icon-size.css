@@ -11,12 +11,16 @@
 .video-js .vjs-control-bar {
   background: rgba(0, 0, 0, 0.45) !important;
   height: 3em;
+  display: flex;
+  align-items: center;
 }
 
-/* better vertical centering balance */
+/* Normalize control boxes */
 .video-js .vjs-control-bar .vjs-control {
-  padding-top: 0.13em;
-  padding-bottom: 0.12em;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+  align-items: center;
 }
 
 /* remove remaining duration (-0:29) */
@@ -24,48 +28,58 @@
   display: none !important;
 }
 
-/* Fix spacing around fullscreen icon only */
-.video-js .vjs-fullscreen-control {
-  margin-left: 0.15em;
-  margin-right: 0.05em;
-}
-
-/* Move play icon up slightly */
-.video-js .vjs-play-control .vjs-icon-placeholder:before {
-  position: relative;
-  top: -0.03em;
-}
-
-/* Move volume tool up slightly more than play */
-.video-js .vjs-mute-control .vjs-icon-placeholder:before,
-.video-js .vjs-volume-control,
-.video-js .vjs-volume-panel {
-  position: relative;
-  top: -0.07em;
-}
-
-/* Move current time / divider / duration up slightly more than play */
-.video-js .vjs-current-time,
-.video-js .vjs-time-divider,
-.video-js .vjs-duration {
-  position: relative;
-  top: -0.07em;
-}
-
-/* Move the quality/settings cog up slightly more than play */
-.video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
-  position: relative;
-  top: -0.07em;
-}
-
-/* Fullscreen icon: enlarge so it better matches the other icons */
-.video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-  font-size: 1.2em !important;
-}
-
 /* Hide LIVE elements */
 .video-js .vjs-live-control,
 .video-js .vjs-live-display,
 .video-js .vjs-seek-to-live-control {
   display: none !important;
+}
+
+/* Move play icon up */
+.video-js .vjs-play-control .vjs-icon-placeholder {
+  position: relative;
+  top: -0.08em;
+}
+
+/* Move volume tool up a bit more */
+.video-js .vjs-volume-panel,
+.video-js .vjs-mute-control .vjs-icon-placeholder,
+.video-js .vjs-volume-control,
+.video-js .vjs-volume-bar {
+  position: relative;
+  top: -0.12em;
+}
+
+/* Move time displays up */
+.video-js .vjs-current-time,
+.video-js .vjs-time-divider,
+.video-js .vjs-duration,
+.video-js .vjs-current-time-display,
+.video-js .vjs-duration-display {
+  position: relative;
+  top: -0.12em;
+}
+
+/* Move the quality/settings control up */
+.video-js .vjs-quality-menu-wrapper,
+.video-js .vjs-quality-menu-button,
+.video-js .vjs-quality-menu-button .vjs-icon-placeholder {
+  position: relative;
+  top: -0.12em;
+}
+
+/* Fullscreen spacing */
+.video-js .vjs-fullscreen-control {
+  margin-left: 0.15em;
+  margin-right: 0.05em;
+}
+
+/* Make fullscreen icon actually larger */
+.video-js .vjs-fullscreen-control {
+  font-size: 1.35em !important;
+}
+
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder {
+  position: relative;
+  top: -0.08em;
 }
