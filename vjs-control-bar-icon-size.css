@@ -40,13 +40,13 @@
 /* Slight upward nudge for play icon */
 .video-js .vjs-play-control .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.06em;
+  top: -0.10em;
 }
 
 /* Slight upward nudge for mute icon */
 .video-js .vjs-mute-control .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.08em;
+  top: -0.12em;
 }
 
 /* Slight upward nudge for current time / divider / duration */
@@ -54,20 +54,18 @@
 .video-js .vjs-time-divider,
 .video-js .vjs-duration {
   position: relative;
-  top: -0.08em;
+  top: -0.12em;
 }
 
 /* Slight upward nudge for quality/settings cog */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.08em;
+  top: -0.12em;
 }
 
-/* Make fullscreen icon a bit larger */
-.video-js .vjs-fullscreen-control {
-  font-size: 1.28em !important;
-}
-
-.video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-  font-size: 1em !important;
+/* Scale fullscreen icon using rendered box instead of font-size */
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder {
+  display: inline-block;
+  transform: scale(1.22);
+  transform-origin: center;
 }
