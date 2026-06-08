@@ -80,13 +80,13 @@
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder {
   display: inline-block;
   line-height: 1;
+  position: relative;
+  top: -0.16em;
 }
 
 /* Keep fullscreen icon at 2.3em and position it centred */
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
   display: inline-block;
-  position: relative;
-  top: -0.16em;
   font-size: 2.3em !important;
   line-height: 1 !important;
 }
