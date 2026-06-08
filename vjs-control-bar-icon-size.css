@@ -81,7 +81,7 @@
   display: inline-block;
   line-height: 1;
   position: relative;
-  top: -0.001em;
+  top: 0;
 }
 
 /* Keep fullscreen icon at 2.3em */
@@ -90,5 +90,5 @@
   font-size: 2.3em !important;
   line-height: 1 !important;
   position: relative;
-  top: -0.001em;
+  top: 0.06em;
 }
