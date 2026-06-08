@@ -73,7 +73,7 @@
 /* Move CC icon up to match the other aligned controls */
 .video-js .vjs-subs-caps-button .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.22em;
+  top: -0.20em;
 }
 
 /* Move the quality/settings cog up a little more */
