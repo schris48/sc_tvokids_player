@@ -73,10 +73,14 @@
 /* Pull fullscreen icon down a bit and enlarge it */
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder {
   display: inline-block;
+  position: relative;
+  top: -0.18em;
+  line-height: 1;
 }
 
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-  position: relative;
-  top: -0.08em;
+  display: inline-block;
   font-size: 2.3em !important;
+  line-height: 1 !important;
+  top: 0;
 }
