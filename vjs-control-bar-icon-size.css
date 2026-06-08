@@ -64,6 +64,12 @@
   top: -0.18em;
 }
 
+/* Move CC icon position centred*/
+.video-js .vjs-subs-caps-button .vjs-icon-placeholder {
+  position: relative;
+  top: 0;
+}
+
 /* Move CC icon up to match the other aligned controls */
 .video-js .vjs-subs-caps-button .vjs-icon-placeholder:before {
   position: relative;
