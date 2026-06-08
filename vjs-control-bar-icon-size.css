@@ -64,6 +64,12 @@
   top: -0.18em;
 }
 
+/* Move CC icon up to match the other aligned controls */
+.video-js .vjs-subs-caps-button .vjs-icon-placeholder:before {
+  position: relative;
+  top: -0.22em;
+}
+
 /* Move the quality/settings cog up a little more */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
