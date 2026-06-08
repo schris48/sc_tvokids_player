@@ -80,6 +80,7 @@
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder {
   display: inline-block;
   line-height: 1;
+  top: -0.20em;
 }
 
 /* Keep fullscreen icon at 2.3em and move it upward more */
