@@ -77,6 +77,6 @@
 
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
   position: relative;
-  top: 0.02em;
-  font-size: 1.75em !important;
+  top: -0.06em;
+  font-size: 2em !important;
 }
