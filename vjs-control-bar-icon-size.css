@@ -67,12 +67,17 @@
 /* Move the quality/settings cog up a little more */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.18em;
+  top: -0.21em;
 }
 
 /* Pull fullscreen icon down a bit and enlarge it */
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder {
+  display: inline-block;
+  font-size: 1.55em !important;
+}
+
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
   position: relative;
-  top: 0.04em;
-  font-size: 1.45em !important;
+  top: 0.02em;
+  font-size: 1em !important;
 }
