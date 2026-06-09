@@ -90,7 +90,7 @@
 /* Move the quality/settings cog up a little more */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
-  top: -0.28em;
+  top: -0.26em;
 }
 
 /* Fix spacing around fullscreen icon only */
