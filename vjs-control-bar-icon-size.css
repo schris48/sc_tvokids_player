@@ -76,6 +76,17 @@
   top: -0.30em;
 }
 
+/* Move DV / audio track icon into alignment */
+.video-js .vjs-audio-button .vjs-icon-placeholder {
+  position: relative;
+  top: 0;
+}
+
+.video-js .vjs-audio-button .vjs-icon-placeholder:before {
+  position: relative;
+  top: -0.30em;
+}
+
 /* Move the quality/settings cog up a little more */
 .video-js .vjs-quality-menu-button .vjs-icon-placeholder:before {
   position: relative;
